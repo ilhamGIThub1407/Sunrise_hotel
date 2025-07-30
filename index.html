@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Hotel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Sunrise Logo -->
+    <div><img src="logo/sunrise-logo.png" alt="Sunrise Hotel Logo" width="100"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Rooms</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="responsive-image-section">
+        <div class="image-container">
+            <img src="logo/banner/beach-banner.png" alt="Beach Banner">
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+        </div>
+        <div class="galleries">
+            <div class="item">
+                <img src="images/room-1.png" alt="Standard Room">
+                <p>Standard Room: A modern hotel room with queen-size bed and stunning views.</p>
+            </div>
+            <div class="item">
+                <img src="images/room-2.png" alt="Family Room">
+                <p>Family Room: Spacious room for your family with queen-size bed and amenities.</p>
+            </div>
+            <div class="item">
+                <img src="images/room-3.png" alt="Gold Room">
+                <p>Gold Room: Luxurious room with premium furnishings and great views.</p>
+            </div>
+            <div class="item">
+                <img src="images/room-4.png" alt="Deluxe Room">
+                <p>Deluxe Room: Experience ultimate comfort in our deluxe suite.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Reservation</h2>
+    </div>
+
+    <section class="reservation">
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Address" rows="10" required></textarea>
+            <h5>Check-in Date</h5>
+            <input type="date" placeholder="Check-in Date" required>
+            <h5>Check-out Date</h5>
+            <input type="date" placeholder="Check-out Date" required>
+            <input type="number" placeholder="Number of Guests" required>
+            <select required>
+                <option value="standard">Standard Room</option>
+                <option value="family">Family Room</option>
+                <option value="gold">Gold Room</option>
+                <option value="deluxe">Deluxe Room</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Sunrise Hotel
+    </footer>
+
+</body>
+
+</html>

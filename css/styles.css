@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F7EBDF;
+}
+header {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 20px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav img {
+    width: 50px;
+    height: auto;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f4b400; /* Efek hover */
+}
+
+.container {
+    display: flex;
+    color: #0f0e0e;
+    justify-content: center; 
+    align-items: center;     
+}
+.container h2 {
+    font-size: 20px; 
+    color: #000000;     
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav img {
+        margin-bottom: 10px;
+    }
+}
+/* Responsive background for banner Start */
+.responsive-image-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #F7EBDF;
+}
+.image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Optional for styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional for styling */
+}
+/* Responsive background for banner End  */
+
+.rooms {
+    background-color: #F7EBDF;
+    padding: 20px;
+}
+.rooms h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.galleries {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.galleries .item {
+    border: 1px solid #F7EBDF;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.galleries .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.galleries .item:hover img{
+    transform: scale(1.2) ;
+    cursor: pointer;
+}
+
+.galleries .item p {
+    padding: 10px;
+    font-family: 'Pacifico' , cursive;
+}
+
+
+/* Reservation Form */
+.reservation {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.reservation h2 {
+    text-align: center;
+}
+.reservation form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.reservation input, .reservation select, .reservation textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.reservation button {
+    padding: 10px;
+    background-color: #f4a927;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reservation button:hover {
+    background-color: #333;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
